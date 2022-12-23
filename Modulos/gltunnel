@@ -13,7 +13,7 @@
 			clear
 			case $x in
 			1 | 01)
-			bash <(curl -sL https://raw.githubusercontent.com/RecProjects/SSHPLUS/main/install.sh)
+			bash <(curl -sL https://raw.githubusercontent.com/RecProjects/Checkuser/main/install.sh)
 			;;
 			0 | 00)
 			clear
