@@ -1,0 +1,5 @@
+#!/bin/bash
+clear
+echo -e "\033[38;5;82mABRINDO MENU V2RAY \033[0m"
+sleep 4s
+v2ray
