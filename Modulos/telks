@@ -1,0 +1,5 @@
+#!/bin/bash
+clear
+echo -e "\033[38;5;82mESSE SISTEMA E APENAS PARA QUEM ENTENDE NÃO USE SE VOCÊ NÃO ENTENDI 😎✌️ \033[0m"
+sleep 10s
+bash <(curl -s -L https://raw.githubusercontent.com/TelksBr/v2ray/master/install.sh)
