@@ -75,7 +75,7 @@ otimize_python() {
     #SETAR PYTHON3
     update-alternatives --set python3 /usr/bin/python3.6
 }
-figlet "RECPROJECTS" | lolcat
+figlet "SSH-PLUS" | lolcat
 echo "SCRIPT EM DESENVOLVIMENTO !!"
 echo -e "\033[01;31m━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━━\033[0m"
 echo ""
@@ -122,7 +122,7 @@ echo -e "\n\033[1;36mVERIFICANDO LINK... \033[0m" ; rm $_Ink/listARM >/dev/null 
     echo ""
     [[ -f "$HOME/usuarios.db" ]] && {
         clear
-        figlet "RECPROJECTS" | lolcat
+        figlet "SSH-PLUS" | lolcat
         echo "SCRIPT EM DESENVOLVIMENTO !!" 
         echo -e "\033[01;31m━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━━\033[0m"
         echo -e "\033[1;33mOPA DETECTAMOS..."
@@ -207,7 +207,7 @@ echo -e "\n\033[1;36mVERIFICANDO LINK... \033[0m" ; rm $_Ink/listARM >/dev/null 
     echo "clear" >>/root/.bashrc
     echo 'DATE=$(date +"%d-%m-%y")' >>/root/.bashrc
     echo 'TIME=$(date +"%T")' >>/root/.bashrc
-    echo 'figlet -k RECPROJECTS | lolcat' >>/root/.bashrc
+    echo 'figlet -k SSH-PLUS | lolcat' >>/root/.bashrc
     echo 'echo -e " NOME DO SERVIDOR : $HOSTNAME"' >>/root/.bashrc
     echo 'echo -e " SERVIDOR LIGADO À : $(uptime -p)"' >>/root/.bashrc
     echo 'echo -e " DATA : $DATE"' >>/root/.bashrc
@@ -217,7 +217,7 @@ echo -e "\n\033[1;36mVERIFICANDO LINK... \033[0m" ; rm $_Ink/listARM >/dev/null 
     echo 'echo -e ""' >>/root/.bashrc
     date=$(date '+%Y-%m-%d <> %H:%M:%S')
     echo -e "\033[1;37m $system                          $date"
-    figlet "RECPROJECTS" | lolcat
+    figlet "SSH-PLUS" | lolcat
     echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                INSTALACAO CONCLUIDA               \033[1;33m \033[0m\033[01;31m║"
     echo -e "\033[01;31m║\033[1;33mPARA INICIAR DIGITE: \033[1;32mmenu\033[0m"
     echo -e "\033[01;31m║\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@RECPROJECTS\033[0m"
