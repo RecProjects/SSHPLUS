@@ -530,7 +530,7 @@ echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;33mCRIAR USUARI
 			clear
 			case $x in
 			11 | 11)
-				intallv2ray
+				v2init
 				;;
 			8 | 08)
 				protocolv2ray
