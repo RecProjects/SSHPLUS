@@ -490,7 +490,7 @@ echo "App: https://apps.apple.com/br/app/fair-vpn/id1533873488"
 		while true $x != "ok"; do
 			[[ ! -e '/home/sshplus' ]] && exit 0
 			clear
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%55s%s%-12s\n' "V2RAY PRO @ALFAINTERNET " ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%55s%s%-12s\n' "V2RAY PRO @RECPROJECTS " ; tput sgr0
 echo "Para Ativar o (V2RAY) é obrigatório que todos os outros modos de conexões esteja (DESATIVADOS)"
 echo "" 
 			xv2ray1=`if netstat -tunlp |grep v2ray 1> /dev/null 2> /dev/null; then
