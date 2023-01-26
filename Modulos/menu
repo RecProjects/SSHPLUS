@@ -489,7 +489,6 @@ case "$x" in
    ;;
    v | V)
    v2raymanager
-   exit
    ;;
    0|00)
    echo -e "\033[1;31mSaindo...\033[0m"
