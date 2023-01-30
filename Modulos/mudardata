@@ -16,19 +16,19 @@ while read user; do
 	expire="$(chage -l $user | grep -E "Account expires" | cut -d ' ' -f3-)"
 	if [[ $expire == "never" ]]
 	then
-		echo -e "\033[1;31m[\033[1;36m$i\033[1;31m] \033[1;91m- \033[1;32m$user     \033[1;33m00/00/0000   S/DATA\033[0m"
+		echo -e "\033[1;31m[\033[1;36m$i\033[1;31m] \033[1;94m- \033[1;32m$user     \033[1;33m00/00/0000   S/DATA\033[0m"
 	else
 		databr="$(date -d "$expire" +"%Y%m%d")"
 		hoje="$(date -d today +"%Y%m%d")"
 		if [ $hoje -ge $databr ]
 		then
-			_user=$(echo -e "\033[1;31m[\033[1;36m$i\033[1;31m] \033[1;91m- \033[1;32m$user\033[1;91m")
+			_user=$(echo -e "\033[1;31m[\033[1;36m$i\033[1;31m] \033[1;94m- \033[1;32m$user\033[1;94m")
 			datanormal="$(echo -e "\033[1;31m$(date -d"$expire" '+%d/%m/%Y')")"
 			expired=$(echo -e "\033[1;31mVENCEU\033[0m")
 			printf '%-62s%-20s%s\n' "$_user" "$datanormal" "$expired"
 			echo "exp" > /tmp/exp
 		else
-			_user=$(echo -e "\033[1;31m[\033[1;36m$i\033[1;31m] \033[1;91m- \033[1;32m$user\033[1;91m")
+			_user=$(echo -e "\033[1;31m[\033[1;36m$i\033[1;31m] \033[1;94m- \033[1;32m$user\033[1;94m")
 			datanormal="$(echo -e "\033[1;33m$(date -d"$expire" '+%d/%m/%Y')")"
 			ative=$(echo -e "\033[1;32mVALIDO\033[0m")
 			printf '%-62s%-20s%s\n' "$_user" "$datanormal" "$ative"
@@ -43,7 +43,7 @@ then
 	rm /tmp/exp
 fi
 num_user=$(awk -F: '$3>=1000 {print $1}' /etc/passwd | grep -v nobody | wc -l)
-echo -ne "\033[1;32mDigite ou selecione um usuario \033[1;33m[\033[1;36m1\033[1;33m-\033[1;36m$num_user\033[1;33m]\033[1;91m: " ; read option
+echo -ne "\033[1;32mDigite ou selecione um usuario \033[1;33m[\033[1;36m1\033[1;33m-\033[1;36m$num_user\033[1;33m]\033[1;94m: " ; read option
 if [[ -z $option ]]
 then
 	echo ""
@@ -61,9 +61,9 @@ else
 	if [[ `grep -c /$usuario: /etc/passwd` -ne 0 ]]
 	then
 	    echo ""
-	    echo -e "\033[1;31mEX:\033[1;33m(\033[1;32mDATA: \033[1;91mDIA/MÊS/ANO \033[1;33mOU \033[1;32mDIAS: \033[1;91m30\033[1;33m)"
+	    echo -e "\033[1;31mEX:\033[1;33m(\033[1;32mDATA: \033[1;94mDIA/MÊS/ANO \033[1;33mOU \033[1;32mDIAS: \033[1;94m30\033[1;33m)"
 	    echo ""
-	    echo -ne "\033[1;32mNova data ou dias para o usuario \033[1;33m$usuario: \033[1;91m"; read inputdate
+	    echo -ne "\033[1;32mNova data ou dias para o usuario \033[1;33m$usuario: \033[1;94m"; read inputdate
 	    if [[ "$(echo -e "$inputdate" | grep -c "/")" = "0" ]]; then 
 	    	udata=$(date "+%d/%m/%Y" -d "+$inputdate days")
 	    	sysdate="$(echo "$udata" | awk -v FS=/ -v OFS=- '{print $3,$2,$1}')"

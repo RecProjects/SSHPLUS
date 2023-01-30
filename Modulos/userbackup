@@ -61,11 +61,11 @@ backbot=$1
 	}
 	echo -e "\E[44;1;37m             Gerenciador De Backups              \E[0m"
 	echo ""
-	echo -e "\033[1;31m[\033[1;36m1\033[1;31m] \033[1;91m• \033[1;33mCRIAR BACKUP"
-	echo -e "\033[1;31m[\033[1;36m2\033[1;31m] \033[1;91m• \033[1;33mRESTAURAR BACKUP"
-	echo -e "\033[1;31m[\033[1;36m3\033[1;31m] \033[1;91m• \033[1;33mVOLTAR\033[1;91m"
+	echo -e "\033[1;31m[\033[1;36m1\033[1;31m] \033[1;94m• \033[1;33mCRIAR BACKUP"
+	echo -e "\033[1;31m[\033[1;36m2\033[1;31m] \033[1;94m• \033[1;33mRESTAURAR BACKUP"
+	echo -e "\033[1;31m[\033[1;36m3\033[1;31m] \033[1;94m• \033[1;33mVOLTAR\033[1;94m"
 	echo ""
-	echo -ne "\033[1;32mOQUE DESEJA FAZER\033[1;31m ?\033[1;91m : "
+	echo -ne "\033[1;32mOQUE DESEJA FAZER\033[1;31m ?\033[1;94m : "
 	read opcao
 	if [[ "$opcao" = '1' ]]; then
 		if [ -f "/root/usuarios.db" ]; then
@@ -87,7 +87,7 @@ backbot=$1
 				echo ""
 
 			}
-			echo -ne "\033[1;32mGERAR LINK PARA DOWNLOAD \033[1;31m? \033[1;33m[s/n]:\033[1;91m "
+			echo -ne "\033[1;32mGERAR LINK PARA DOWNLOAD \033[1;31m? \033[1;33m[s/n]:\033[1;94m "
 			read resp
 			if [[ "$resp" = "s" ]]; then
 				echo ""
@@ -97,9 +97,9 @@ backbot=$1
 				echo ""
 				if [ -e /var/www/html/backup/backup.vps ]; then
 					if [[ "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
-						echo -e "\033[1;32mLINK\033[1;91m: \033[1;36m$IP:81/html/backup/backup.vps\033[0m"
+						echo -e "\033[1;32mLINK\033[1;94m: \033[1;36m$IP:81/html/backup/backup.vps\033[0m"
 					else
-						echo -e "\033[1;32mLINK\033[1;91m: \033[1;36m$IP:81/backup/backup.vps\033[0m"
+						echo -e "\033[1;32mLINK\033[1;94m: \033[1;36m$IP:81/backup/backup.vps\033[0m"
 					fi
 				else
 					echo -e "\033[1;32mDisponivel em\033[1;31m" ~/"backup.vps\033[0m"
