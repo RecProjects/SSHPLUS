@@ -23,7 +23,7 @@ while true; do
    tput dl1
    echo -ne "\033[1;33m["
 done
-echo -e "\033[1;33m]\033[1;94m -\033[1;32m OK !\033[1;94m"
+echo -e "\033[1;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
 tput cnorm
 }
 
@@ -55,7 +55,7 @@ echo ""
 echo -e "\033[1;31m[\033[1;36m1\033[1;31m]\033[1;33m Desinstalar"
 echo -e "\033[1;31m[\033[1;36m2\033[1;31m]\033[1;33m Ver Log"
 echo ""
-read -p "$(echo -e "\033[1;32mOQUE DESEJA FAZER\033[1;31m ?\033[1;94m : ")" lo_og
+read -p "$(echo -e "\033[1;32mOQUE DESEJA FAZER\033[1;31m ?\033[1;37m : ")" lo_og
 if [ "$lo_og" = "2" ]; then
 
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -81,7 +81,7 @@ echo -e "\033[1;33mEste Anti Ataque foi Feito unicamente para proteger seu"
 echo -e "\033[1;33mSistema ,seu objetivo é analizar LOGS DE ACESSO e bloquear toda e"
 echo -e "\033[1;33mqualquer ação suspeita aumentando 70% sua segurança."
 echo ""
-read -p "$(echo -e "\033[1;32mDESEJA INSTALAR ANTI ATAQUE DDOS \033[1;31m? \033[1;33m[s/n]:\033[1;94m ")" fail2ban
+read -p "$(echo -e "\033[1;32mDESEJA INSTALAR ANTI ATAQUE DDOS \033[1;31m? \033[1;33m[s/n]:\033[1;37m ")" fail2ban
 if [[ "$fail2ban" = "s" || "$fail2ban" = "S" ]]; then
 echo ""
 echo -e "\033[1;32mINSTALANDO"
@@ -145,7 +145,7 @@ echo -ne " $s4"
 fi
 echo ""
 echo ""
-read -p "$(echo -e "\033[1;32mConfirma a escolha? \033[1;31m? \033[1;33m[S/N]:\033[1;94m ")" sim_nao
+read -p "$(echo -e "\033[1;32mConfirma a escolha? \033[1;31m? \033[1;33m[S/N]:\033[1;37m ")" sim_nao
 if [[ "$sim_nao" = "s" || "$sim_nao" = "S" ]]; then
 if [ "$s1" != "" ]; then
 echo '[sshd]

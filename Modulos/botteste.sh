@@ -3,7 +3,7 @@
     clear
     echo -e "\E[44;1;37m     ATIVACÃO BOT SSH TESTE     \E[0m"
     echo ""
-    echo -ne "\n\033[1;32mINFORME O TOKEN\033[1;94m: "
+    echo -ne "\n\033[1;32mINFORME O TOKEN\033[1;37m: "
     read token
     clear
     echo ""

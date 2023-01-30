@@ -87,12 +87,12 @@ fi
 declare -a banner banner_colors
 
 banner=(
-"██████┐  █████┐ ███████┐██┐  ██┐████████┐ ██████┐ ██████┐ "
-"██┌──██┐██┌──██┐██┌────┘██│  ██│└──██┌──┘██┌───██┐██┌──██┐"
-"██████┌┘███████│███████┐███████│   ██│   ██│   ██│██████┌┘"
-"██┌──██┐██┌──██│└────██│██┌──██│   ██│   ██│   ██│██┌───┘ "
-"██████┌┘██│  ██│███████│██│  ██│   ██│   └██████┌┘██│     "
-"└─────┘ └─┘  └─┘└──────┘└─┘  └─┘   └─┘    └─────┘ └─┘     ")
+"██████╗  █████╗ ███████╗██╗  ██╗████████╗ ██████╗ ██████╗ "
+"██╔══██╗██╔══██╗██╔════╝██║  ██║╚══██╔══╝██╔═══██╗██╔══██╗"
+"██████╔╝███████║███████╗███████║   ██║   ██║   ██║██████╔╝"
+"██╔══██╗██╔══██║╚════██║██╔══██║   ██║   ██║   ██║██╔═══╝ "
+"██████╔╝██║  ██║███████║██║  ██║   ██║   ╚██████╔╝██║     "
+"╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝     ")
 declare version="0.9.25"
 
 #* Get latest version of BashTOP from https://github.com/aristocratos/bashtop
@@ -191,17 +191,17 @@ menu_quit=(
 "└─┘└└─┘ ┴ ┴ ")
 
 menu_options_selected=(
-"┌─┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐"
-"│ │├─┘ │ ││ ││││└─┐"
-"└─┘┴   ┴ ┴└─┘┘└┘└─┘")
+"╔═╗╔═╗╔╦╗╦╔═╗╔╗╔╔═╗"
+"║ ║╠═╝ ║ ║║ ║║║║╚═╗"
+"╚═╝╩   ╩ ╩╚═╝╝╚╝╚═╝")
 menu_help_selected=(
-"┬ ┬┌─┐┬  ┌─┐"
-"├─┤│┤ │  ├─┘"
-"┴ ┴└─┘┴─┘┴  ")
+"╦ ╦╔═╗╦  ╔═╗"
+"╠═╣║╣ ║  ╠═╝"
+"╩ ╩╚═╝╩═╝╩  ")
 menu_quit_selected=(
-"┌─┐ ┬ ┬ ┬┌┬┐ "
-"│─┼┐│ │ │ │  "
-"└─┘└└─┘ ┴ ┴  ")
+"╔═╗ ╦ ╦ ╦╔╦╗ "
+"║═╬╗║ ║ ║ ║  "
+"╚═╝╚╚═╝ ╩ ╩  ")
 
 declare -A cpu mem swap proc net box theme disks
 declare -a cpu_usage cpu_graph_a cpu_graph_b color_meter color_temp_graph color_cpu color_cpu_graph cpu_history color_mem_graph color_swap_graph
@@ -269,12 +269,12 @@ box[single_right_corner_down]="┘"
 box[single_title_left]="├"
 box[single_title_right]="┤"
 
-box[double_hor_line]="─"
-box[double_vert_line]="│"
-box[double_left_corner_up]="┌"
-box[double_right_corner_up]="┐"
-box[double_left_corner_down]="└"
-box[double_right_corner_down]="┘"
+box[double_hor_line]="═"
+box[double_vert_line]="║"
+box[double_left_corner_up]="╔"
+box[double_right_corner_up]="╗"
+box[double_left_corner_down]="╚"
+box[double_right_corner_down]="╝"
 box[double_title_left]="╟"
 box[double_title_right]="╢"
 

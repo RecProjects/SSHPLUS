@@ -1,29 +1,29 @@
 #!/bin/bash
 clear
 fun_badvpn() {
-echo -e "\033[1;94m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;37m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo -e "\E[44;1;37m            GERENCIAR BADVPN             \E[0m"
-echo -e "\033[1;94m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;37m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo ""
     if ps x | grep -w udpvpn | grep -v grep 1>/dev/null 2>/dev/null; then
-        echo -e "\033[1;94mPORTAS\033[1;94m: \033[1;32m$(netstat -nplt | grep 'badvpn-ud' | awk {'print $4'} | cut -d: -f2 | xargs)"
+        echo -e "\033[1;37mPORTAS\033[1;37m: \033[1;32m$(netstat -nplt | grep 'badvpn-ud' | awk {'print $4'} | cut -d: -f2 | xargs)"
     else
         sleep 0.1
     fi
     var_sks1=$(ps x | grep "udpvpn"|grep -v grep > /dev/null && echo -e "\033[1;32m◉ " || echo -e "\033[1;31m○ ")
     echo ""
-    echo -e "\033[1;31m[\033[1;36m1\033[1;31m] \033[1;94m• \033[1;94mATIVAR BADVPN(PADRÃO 7300) $var_sks1 \033[0m"
-    echo -e "\033[1;31m[\033[1;36m2\033[1;31m] \033[1;94m• \033[1;94mABRIR PORTA\033[0m"
-    echo -e "\033[1;31m[\033[1;36m0\033[1;31m] \033[1;94m• \033[1;94mVOLTAR\033[0m"
+    echo -e "\033[1;31m[\033[1;36m1\033[1;31m] \033[1;37m• \033[1;37mATIVAR BADVPN(PADRÃO 7300) $var_sks1 \033[0m"
+    echo -e "\033[1;31m[\033[1;36m2\033[1;31m] \033[1;37m• \033[1;37mABRIR PORTA\033[0m"
+    echo -e "\033[1;31m[\033[1;36m0\033[1;31m] \033[1;37m• \033[1;37mVOLTAR\033[0m"
     echo ""
-    echo -ne "\033[1;32mO QUE DESEJA FAZER \033[1;94m?\033[1;94m "
+    echo -ne "\033[1;32mO QUE DESEJA FAZER \033[1;37m?\033[1;37m "
     read resposta
     if [[ "$resposta" = '1' ]]; then
         if ps x | grep -w udpvpn | grep -v grep 1>/dev/null 2>/dev/null; then
             clear
-echo -e "\033[1;94m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;37m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo -e "\E[44;1;37m            GERENCIAR BADVPN             \E[0m"
-echo -e "\033[1;94m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;37m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
             echo ""
             fun_stopbad () {
                 sleep 1
@@ -36,11 +36,11 @@ echo -e "\033[1;94m━━━━━━━━━━━━━━━━━━━━�
                 sleep 1
                 screen -wipe >/dev/null
             }
-            echo -e "\033[1;32mDESATIVANDO O BADVPN\033[1;94m"
+            echo -e "\033[1;32mDESATIVANDO O BADVPN\033[1;37m"
             echo ""
             fun_stopbad
             echo ""
-            echo -e "\033[1;32mBADVPN DESATIVADO COM SUCESSO!\033[1;94m"
+            echo -e "\033[1;32mBADVPN DESATIVADO COM SUCESSO!\033[1;37m"
             sleep 3
 	    clear
             fun_badvpn
@@ -71,7 +71,7 @@ echo -e "\033[1;94m━━━━━━━━━━━━━━━━━━━━�
             inst_udp
             fun_udpon
             echo ""
-            echo -e "\033[1;32mBADVPN ATIVADO COM SUCESSO\033[1;94m"
+            echo -e "\033[1;32mBADVPN ATIVADO COM SUCESSO\033[1;37m"
             sleep 3
 	    clear
             fun_badvpn
@@ -81,7 +81,7 @@ echo -e "\033[1;94m━━━━━━━━━━━━━━━━━━━━�
             clear
             echo -e "\E[44;1;37m            BADVPN             \E[0m"
             echo ""
-            echo -ne "\033[1;32mQUAL PORTA DESEJA ULTILIZAR \033[1;94m?\033[1;94m: "
+            echo -ne "\033[1;32mQUAL PORTA DESEJA ULTILIZAR \033[1;37m?\033[1;37m: "
             read porta
             [[ -z "$porta" ]] && {
                 echo ""
@@ -91,7 +91,7 @@ echo -e "\033[1;94m━━━━━━━━━━━━━━━━━━━━�
                 menu
             }
             echo ""
-            echo -e "\033[1;32mINICIANDO O BADVPN NA PORTA \033[1;31m$porta\033[1;94m"
+            echo -e "\033[1;32mINICIANDO O BADVPN NA PORTA \033[1;31m$porta\033[1;37m"
             echo ""
             fun_abrirptbad() {
                 sleep 1
@@ -101,13 +101,13 @@ echo -e "\033[1;94m━━━━━━━━━━━━━━━━━━━━�
             }
             fun_abrirptbad
             echo ""
-            echo -e "PORTA \033[1;32m$porta\033[1;94m ATIVADA COM SUCESSO"
+            echo -e "PORTA \033[1;32m$porta\033[1;37m ATIVADA COM SUCESSO"
             sleep 2
 	    clear
             fun_badvpn
 	    else
             clear
-            echo -e "\033[1;31mFUNCAO INDISPONIVEL\n\n\033[1;94mATIVE O BADVPN PRIMEIRO !\033[1;94m"
+            echo -e "\033[1;31mFUNCAO INDISPONIVEL\n\n\033[1;37mATIVE O BADVPN PRIMEIRO !\033[1;37m"
             sleep 2
             fun_badvpn
         fi
