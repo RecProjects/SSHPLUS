@@ -21,9 +21,9 @@ database="/root/usuarios.db"
 clear
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%32s%s%-13s\n' "Remover Usuário SSH" ; tput sgr0
 echo ""
-echo -e "\033[1;31m[\033[1;36m1\033[1;31m]\033[1;33m REMOVER UM USUARIO"
-echo -e "\033[1;31m[\033[1;36m2\033[1;31m]\033[1;33m REMOVER TODOS USUARIOS"
-echo -e "\033[1;31m[\033[1;36m3\033[1;31m]\033[1;33m VOLTAR"
+echo -e "\033[1;34m[\033[1;37m1\033[1;34m]\033[1;33m REMOVER UM USUARIO"
+echo -e "\033[1;34m[\033[1;37m2\033[1;34m]\033[1;33m REMOVER TODOS USUARIOS"
+echo -e "\033[1;34m[\033[1;37m3\033[1;34m]\033[1;33m VOLTAR"
 echo ""
 read -p "$(echo -e "\033[1;32mOQUE DESEJA FAZER\033[1;31m ?\033[1;37m : ")" -e -i 1 resp
 if [[ "$resp" = "1" ]]; then
