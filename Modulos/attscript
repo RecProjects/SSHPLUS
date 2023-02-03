@@ -70,9 +70,9 @@ fun_atts () {
 
 } > /dev/null 2>&1
 
-echo -e "                              \033[1;36mBy LOCKED\033[1;36m"
+echo -e "                              \033[1;36mBy RECPROJECTS\033[1;36m"
 
-echo -e "   LOCKEDSSH" | figlet
+echo -e "   RECPROJECTS" | figlet
 
 echo " "
 
@@ -102,7 +102,7 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
 
   rm /tmp/att > /dev/null 2>&1
 
-  echo -e " \033[1;37m CONTATO \033[1;37m(\033[1;36mTELEGRAM\033[1;37m): \033[1;37m@LOCKED_SSH\n"
+  echo -e " \033[1;37m CONTATO \033[1;37m(\033[1;36mTELEGRAM\033[1;37m): \033[1;37m@RECPROJECTS\n"
 
   echo -ne " \033[1;31m ENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
 
@@ -112,7 +112,7 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
 
   echo -e "  \033[1;36mEXISTE UMA NOVA ATUALIZACAO DISPONIVEL!\033[1;33m\n"
 
-  echo -e "  \033[1;37mMAIS INFORMACOES \033[1;37m(\033[1;36mTELEGRAM\033[1;37m): \033[1;37m@LOCKED_SSH\n"
+  echo -e "  \033[1;37mMAIS INFORMACOES \033[1;37m(\033[1;36mTELEGRAM\033[1;37m): \033[1;37m@RECPROJECTS\n"
 
   echo -e "  \033[1;32mDETALHES DA ATUALIZACAO:\033[0m\n"
 
